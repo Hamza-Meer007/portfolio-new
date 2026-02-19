@@ -1,0 +1,132 @@
+.about-section {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 800px;
+}
+
+.about-content .section-description {
+    margin-bottom: 20px;
+}
+
+.about-label {
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    border: 2px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.contact-btn {
+    margin-top: 24px;
+}
+
+.about-section {
+    padding: 30px 0;
+}
+
+.about-content {
+    margin-top: 32px;
+}
+
+.btn-primary {
+    margin-top: 16px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 255, 136, 0.2);
+}
+
+/* Scroll Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 30px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-label {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
