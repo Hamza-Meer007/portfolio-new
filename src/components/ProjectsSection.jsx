@@ -8,16 +8,16 @@ const ProjectsSection = () => {
     const projects = [
       {
         id: 1,
-        image: "src/assets/naz-auto.png",
+        image: "src/assets/naz-auto.webp",
         title: "NAZ-Auto Exchange",
         description:
           "A modern, production-ready web application for browsing, inquiring, and managing Japanese imported cars.",
-        tags: ["React", "Django", "PostgreSQL", "DRF"],
+        tags: ["React","TypeScript", "Django", "PostgreSQL", "DRF"],
         githubLink: "https://naz-auto.vercel.app/",
       },
       {
         id: 2,
-        image: "src/assets/Eco-Smart.png",
+        image: "src/assets/Eco-Smart.webp",
         title: "Eco-Smart",
         description: "Intelligent Waste Tracking & Management Portal",
         tags: ["React", "TypeScript", "Node.js", "MongoDB"],
@@ -25,15 +25,16 @@ const ProjectsSection = () => {
       },
       {
         id: 3,
-        image: "src/assets/tour.png",
+        image: "src/assets/tour.webp",
         title: "Tourest - Travel Agency",
-        description: "Tourest is fully responsive travel website,Responsive for all devices, modern design, and user-friendly interface.",
+        description:
+          "Tourest is fully responsive travel website,Responsive for all devices, modern design, and user-friendly interface.",
         tags: ["HTML", "CSS", "TailwindCSS", "JavaScript"],
         githubLink: "https://travel-tour09.netlify.app/",
       },
       {
         id: 4,
-        image: "src/assets/Netflix.png",
+        image: "src/assets/Netflix.webp",
         title: "Netflix Recommendation System",
         description: "Content-based Movie Recommendation System",
         tags: ["Flask", "Data Analysis", "Python", "Machine Learning"],
@@ -41,11 +42,12 @@ const ProjectsSection = () => {
       },
       {
         id: 5,
-        image: "src/assets/Estate_AI.png",
-        title: "Estate AI",
-        description: "Predicts Home Prices based on Location and Features",
-        tags: ["Python", "Flask", "scikit-learn"],
-        githubLink: "https://github.com/Adnan-Asad1/Estate-AL",
+        image: "src/assets/brain-tumor.webp",
+        title: "Brain Tumor Detection",
+        description:
+          "Detects Brain Tumors in MRI Images using Machine Learning",
+        tags: ["Python", "FastAPI", "TensorFlow", "OpenCV"],
+        githubLink: "https://brain-tumor-classification.netlify.app/",
       },
       {
         id: 6,
