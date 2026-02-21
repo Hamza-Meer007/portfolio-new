@@ -86,93 +86,119 @@ const ProjectsSection = () => {
     };
 
     return (
-        <section id="projects" className="section projects-section">
-            <div className="section-label">Projects</div>
-            <h2 className="section-title">My Featured Projects</h2>
+      <section id="projects" className="section projects-section">
+        <div className="section-label">Projects</div>
+        <h2 className="section-title">My Featured Projects</h2>
 
-            <div className="projects-carousel-container">
-                <button className="carousel-btn carousel-btn-left" onClick={prevSlide}>
-                    <FaChevronLeft />
-                </button>
+        <div className="projects-carousel-container">
+          <button
+            className="carousel-btn carousel-btn-left"
+            onClick={prevSlide}
+          >
+            <FaChevronLeft />
+          </button>
 
-                <div className="projects-carousel">
-                    <div
-                        className="projects-carousel-track"
-                        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          <div className="projects-carousel">
+            <div
+              className="projects-carousel-track"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {/* Slide 1 - Projects 1-4 */}
+              <div className="projects-slide">
+                <div className="projects-grid">
+                  {projects.slice(0, 4).map((project) => (
+                    <a
+                      key={project.id}
+                      className="project-card"
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                        {/* Slide 1 - Projects 1-4 */}
-                        <div className="projects-slide">
-                            <div className="projects-grid">
-                                {projects.slice(0, 4).map((project) => (
-                                    <a
-                                        key={project.id}
-                                        className="project-card"
-                                        href={project.githubLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <div className="project-image">
-                                            <img src={project.image} alt={`Project ${project.id}`} />
-                                        </div>
-                                        <div className="project-content">
-                                            <h3 className="project-title">{project.title}</h3>
-                                            <p className="project-description">{project.description}</p>
-                                            <div className="project-tags">
-                                                {project.tags.map((tag, index) => (
-                                                    <span key={index} className="project-tag">{tag}</span>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </a>
-                                ))}
-                            </div>
+                      <div className="project-image">
+                        <img
+                          src={project.image}
+                          alt={`Project ${project.id}`}
+                          loading="lazy"
+                          width="300"
+                          height="200"
+                        />
+                      </div>
+                      <div className="project-content">
+                        <h3 className="project-title">{project.title}</h3>
+                        <p className="project-description">
+                          {project.description}
+                        </p>
+                        <div className="project-tags">
+                          {project.tags.map((tag, index) => (
+                            <span key={index} className="project-tag">
+                              {tag}
+                            </span>
+                          ))}
                         </div>
-
-                        {/* Slide 2 - Projects 5-8 */}
-                        <div className="projects-slide">
-                            <div className="projects-grid">
-                                {projects.slice(4, 8).map((project) => (
-                                    <a
-                                        key={project.id}
-                                        className="project-card"
-                                        href={project.githubLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <div className="project-image">
-                                            <img src={project.image} alt={`Project ${project.id}`} />
-                                        </div>
-                                        <div className="project-content">
-                                            <h3 className="project-title">{project.title}</h3>
-                                            <p className="project-description">{project.description}</p>
-                                            <div className="project-tags">
-                                                {project.tags.map((tag, index) => (
-                                                    <span key={index} className="project-tag">{tag}</span>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                      </div>
+                    </a>
+                  ))}
                 </div>
+              </div>
 
-                <button className="carousel-btn carousel-btn-right" onClick={nextSlide}>
-                    <FaChevronRight />
-                </button>
+              {/* Slide 2 - Projects 5-8 */}
+              <div className="projects-slide">
+                <div className="projects-grid">
+                  {projects.slice(4, 8).map((project) => (
+                    <a
+                      key={project.id}
+                      className="project-card"
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="project-image">
+                        <img
+                          src={project.image}
+                          alt={`Project ${project.id}`}
+                          loading="lazy"
+                          width="300"
+                          height="200"
+                        />
+                      </div>
+                      <div className="project-content">
+                        <h3 className="project-title">{project.title}</h3>
+                        <p className="project-description">
+                          {project.description}
+                        </p>
+                        <div className="project-tags">
+                          {project.tags.map((tag, index) => (
+                            <span key={index} className="project-tag">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div className="carousel-indicators">
-                {[...Array(totalSlides)].map((_, index) => (
-                    <button
-                        key={index}
-                        className={`indicator ${currentSlide === index ? 'active' : ''}`}
-                        onClick={() => setCurrentSlide(index)}
-                    />
-                ))}
-            </div>
-        </section>
+          <button
+            className="carousel-btn carousel-btn-right"
+            onClick={nextSlide}
+          >
+            <FaChevronRight />
+          </button>
+        </div>
+
+        <div className="carousel-indicators">
+          {[...Array(totalSlides)].map((_, index) => (
+            <button
+              key={index}
+              className={`indicator ${currentSlide === index ? "active" : ""}`}
+              onClick={() => setCurrentSlide(index)}
+            />
+          ))}
+        </div>
+      </section>
     );
 };
 
