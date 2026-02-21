@@ -1,7 +1,5 @@
 import React from 'react';
 import './HeroSection.css';
-import resumePDF from '../assets/Hamza-Resume.pdf';
-import profilePhoto from '../assets/profile-pic.webp';
 
 const HeroSection = () => {
     return (
@@ -20,7 +18,7 @@ const HeroSection = () => {
 
                     <div className="hero-buttons animate-slide-up" style={{ animationDelay: '0.4s' }}>
                         <a href="#projects" className="btn-hero-primary">My Projects</a>
-                        <a href={resumePDF} download="Hamza-Resume.pdf" className="btn-hero-secondary">Download Resume</a>
+                        <a href="/Hamza-Resume.pdf" download="Hamza-Resume.pdf" className="btn-hero-secondary">Download Resume</a>
                     </div>
 
                     <div className="hero-stats">
@@ -41,7 +39,7 @@ const HeroSection = () => {
 
                 <div className="hero-image animate-fade-in" style={{ animationDelay: '0.4s' }}>
                     <div className="image-placeholder">
-                        <img src={profilePhoto} alt="Hamza Meer" />
+                        <img src="/profile-pic.webp" alt="Hamza Meer" />
                     </div>
                 </div>
             </div>

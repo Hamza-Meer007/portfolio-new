@@ -8,7 +8,7 @@ const ProjectsSection = () => {
     const projects = [
       {
         id: 1,
-        image: "src/assets/naz-auto.webp",
+        image: "/naz-auto.webp",
         title: "NAZ-Auto Exchange",
         description:
           "A modern, production-ready web application for browsing, inquiring, and managing Japanese imported cars.",
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       },
       {
         id: 2,
-        image: "src/assets/Eco-Smart.webp",
+        image: "/Eco-Smart.png",
         title: "Eco-Smart",
         description: "Intelligent Waste Tracking & Management Portal",
         tags: ["React", "TypeScript", "Node.js", "MongoDB"],
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       },
       {
         id: 3,
-        image: "src/assets/tour.webp",
+        image: "/tour.webp",
         title: "Tourest - Travel Agency",
         description:
           "Tourest is fully responsive travel website,Responsive for all devices, modern design, and user-friendly interface.",
@@ -34,7 +34,7 @@ const ProjectsSection = () => {
       },
       {
         id: 4,
-        image: "src/assets/Netflix.webp",
+        image: "/Netflix.webp",
         title: "Netflix Recommendation System",
         description: "Content-based Movie Recommendation System",
         tags: ["Flask", "Data Analysis", "Python", "Machine Learning"],
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       },
       {
         id: 5,
-        image: "src/assets/brain-tumor.webp",
+        image: "/brain-tumor.webp",
         title: "Brain Tumor Detection",
         description:
           "Detects Brain Tumors in MRI Images using Machine Learning",
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
       },
       {
         id: 6,
-        image: "src/assets/Hyper_Sum.png",
+        image: "/Hyper_Sum.png",
         title: "Hyper-Summarizer",
         description: "Sequential and Parallelized Text Summarization",
         tags: ["Python", "NLP", "Flask"],

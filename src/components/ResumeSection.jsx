@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ResumeSection.css';
-import resumePDF from '../assets/Hamza-Resume.pdf';
 
 const ResumeSection = () => {
     const sectionRef = useRef(null);
@@ -136,8 +135,8 @@ const ResumeSection = () => {
             {/* Download Resume Button */}
             <div className="resume-download-container">
                 <a
-                    href={resumePDF}
-                    download="Hamza-Meer-Resume.pdf"
+                    href="/Hamza-Resume.pdf"
+                    download="Hamza-Resume.pdf"
                     className={`btn-download-resume ${isVisible ? 'animate-slide-up' : ''}`}
                     style={{ animationDelay: '0.8s' }}
                 >
