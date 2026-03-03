@@ -41,9 +41,9 @@ const ProfileSidebar = () => {
                     {/* <a href="https://github.com/Hamza-Meer007" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaGithub />
                     </a> */}
-                    <a href="https://www.linkedin.com/in/hamza-meer/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    {/* <a href="https://www.linkedin.com/in/hamza-meer/" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaLinkedinIn />
-                    </a>
+                    </a> */}
                     <a href="https://wa.me/923127674165" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaWhatsapp />
                     </a>

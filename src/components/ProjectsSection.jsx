@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       {
         id: 1,
         image: "/naz-auto.webp",
-        title: "NAZ-Auto Exchange",
+        title: "NAZ Auto Exchange",
         description:
           "A modern, production-ready web application for browsing, inquiring, and managing Japanese imported cars.",
         tags: ["React","TypeScript", "Django", "PostgreSQL", "DRF"],
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       {
         id: 5,
         image: "/brain-tumor.webp",
-        title: "Brain Tumor Detection",
+        title: "NeuroScan AI",
         description:
           "Detects Brain Tumors in MRI Images using Machine Learning",
         tags: ["Python", "FastAPI", "TensorFlow", "OpenCV"],
@@ -57,22 +57,22 @@ const ProjectsSection = () => {
         tags: ["Python", "NLP", "Flask"],
         githubLink: "https://github.com/Adnan-Asad1/Hyper-Summ",
       },
-      {
-        id: 7,
-        image: "/project6.jpg",
-        title: "NILL",
-        description: "NILL",
-        tags: ["NILL"],
-        githubLink: "#",
-      },
-      {
-        id: 8,
-        image: "/project6.jpg",
-        title: "NILL",
-        description: "NILL",
-        tags: ["NILL"],
-        githubLink: "#",
-      },
+      // {
+      //   id: 7,
+      //   image: "/project6.jpg",
+      //   title: "NILL",
+      //   description: "NILL",
+      //   tags: ["NILL"],
+      //   githubLink: "#",
+      // },
+      // {
+      //   id: 8,
+      //   image: "/project6.jpg",
+      //   title: "NILL",
+      //   description: "NILL",
+      //   tags: ["NILL"],
+      //   githubLink: "#",
+      // },
     ];
 
     const totalSlides = 2; // 2 slides (4 projects each)

@@ -27,13 +27,13 @@ const HeroSection = () => {
               <a href="#projects" className="btn-hero-primary">
                 My Projects
               </a>
-              <a
+              {/* <a
                 href="/Hamza-Resume.pdf"
                 download="Hamza-Resume.pdf"
                 className="btn-hero-secondary"
               >
                 Download Resume
-              </a>
+              </a> */}
             </div>
 
             <div className="hero-stats">

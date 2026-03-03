@@ -133,7 +133,7 @@ const ResumeSection = () => {
             </div>
 
             {/* Download Resume Button */}
-            <div className="resume-download-container">
+            {/* <div className="resume-download-container">
                 <a
                     href="/Hamza-Resume.pdf"
                     download="Hamza-Resume.pdf"
@@ -147,7 +147,7 @@ const ResumeSection = () => {
                     </svg>
                     Download Resume
                 </a>
-            </div>
+            </div> */}
         </section>
     );
 };
