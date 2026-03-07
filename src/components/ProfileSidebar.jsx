@@ -21,7 +21,7 @@ const ProfileSidebar = () => {
 
                 <div className="profile-image-container">
                     <img
-                        src="src/assets/Hamza_Photo1.jpeg"
+                        src="/profile_pic2.webp"
                         alt="Hamza Meer"
                         className="profile-image"
                     />

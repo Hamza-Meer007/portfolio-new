@@ -27,6 +27,9 @@ const HeroSection = () => {
               <a href="#projects" className="btn-hero-primary">
                 My Projects
               </a>
+              <a href="#contact" className="btn-hero-secondary">
+                Contact Me
+              </a>
               {/* <a
                 href="/Hamza-Resume.pdf"
                 download="Hamza-Resume.pdf"
