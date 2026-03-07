@@ -67,14 +67,14 @@ const ProjectsSection = () => {
       tags: ["Python", "NLP", "Flask"],
       liveDemo: "https://hyper-summ.vercel.app/",
     },
-    // {
-    //   id: 7,
-    //   image: "/project6.jpg",
-    //   title: "NILL",
-    //   description: "NILL",
-    //   tags: ["NILL"],
-    //   liveDemo: "#",
-    // },
+    {
+      id: 7,
+      image: "/estate_ai.webp",
+      title: "EstateAI - Real Estate Price Prediction",
+      description: "Predicts real estate prices based on various factors and market trends.",
+      tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
+      liveDemo: "https://estate-ai-prediction.netlify.app/",
+    },
     // {
     //   id: 8,
     //   image: "/project6.jpg",
