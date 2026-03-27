@@ -37,11 +37,11 @@ const ProjectsSection = () => {
     {
       id: 3,
       image: "/tour.webp",
-      title: "Tourest - Travel Agency",
+      title: "Travel AI - AI Travel Planner",
       description:
-        "Tourest is fully responsive travel website,Responsive for all devices, modern design, and user-friendly interface.",
-      tags: ["HTML", "CSS", "TailwindCSS", "JavaScript"],
-      liveDemo: "https://travel-tour09.netlify.app/",
+        "Travel AI is a cutting-edge travel planning application that leverages artificial intelligence to provide personalized travel recommendations and seamless booking experiences.",
+      tags: ["Crewai", "Groq", "LangChain", "FastAPI"],
+      liveDemo: "https://aitravel-planner.netlify.app/",
     },
     {
       id: 4,
@@ -61,17 +61,18 @@ const ProjectsSection = () => {
     },
     {
       id: 6,
-      image: "/Hyper_Sum.png",
+      image: "/hyper-summ.webp",
       title: "Hyper-Summarizer",
       description: "Sequential and Parallelized Text Summarization",
-      tags: ["Python", "NLP", "Flask"],
-      liveDemo: "https://hyper-summ.vercel.app/",
+      tags: ["Python", "NLP", "Flask", "Parallel Processing"],
+      liveDemo: "https://adnan071.pythonanywhere.com/",
     },
     {
       id: 7,
       image: "/estate_ai.webp",
       title: "EstateAI - Real Estate Price Prediction",
-      description: "Predicts real estate prices based on various factors and market trends.",
+      description:
+        "Predicts real estate prices based on various factors and market trends.",
       tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
       liveDemo: "https://estate-ai-prediction.netlify.app/",
     },
