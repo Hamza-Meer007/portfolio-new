@@ -70,7 +70,7 @@ const HeroSection = () => {
           >
             <div className="image-placeholder">
               <img
-                src="/profile-pic.webp"
+                src="/team_hamza.webp"
                 alt="Hamza Meer"
                 loading="lazy"
                 width="300"
