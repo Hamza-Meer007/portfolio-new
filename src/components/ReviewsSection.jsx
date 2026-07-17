@@ -8,29 +8,28 @@ const ReviewsSection = () => {
     const [currentReview, setCurrentReview] = useState(0);
 
     const reviews = [
-        {
-            name: 'Alex Tomato',
-            role: 'Brand Manager at Instant Design',
-            rating: 5,
-            text: 'Working with David was an absolute pleasure. His attention to detail, creating insights, and ability to translate complex ideas into stunning visuals truly set him apart.',
-            project: 'Project →'
-        },
-        {
-            name: 'Sarah Johnson',
-            role: 'CEO at TechStart',
-            rating: 5,
-            text: 'David delivered exceptional work on our web application. His expertise in React and modern design principles helped us create a product our users love. Highly recommended!',
-            project: 'Project →'
-        },
-        {
-            name: 'Michael Chen',
-            role: 'Product Lead at InnovateCo',
-            rating: 5,
-            text: 'Outstanding developer and designer. David transformed our vision into reality with pixel-perfect execution and smooth user experience. A true professional!',
-            project: 'Project →'
-        }
-    ];
-
+    {
+        name: 'Khawaja Ali',
+        role: 'Technical Mentor | PhD, Yokohama National University | CTI Engineering, Tokyo',
+        rating: 5,
+        text: 'Hamza has a strong problem-solving mindset and is always willing to validate ideas before building them. During the early planning of ByteDX, he focused on understanding customer problems instead of jumping straight into development. That approach will help him build products with real market value.',
+        
+    },
+    {
+        name: 'Anser Javed',
+        role: 'Advocate • Legal Advisor',
+        rating: 5,
+        text: 'What stands out about Hamza is his professionalism and ownership. He communicates clearly, follows through on commitments, and is open to feedback. He approaches technical work with the same seriousness that businesses expect from a reliable technology partner.',
+        
+    },
+    {
+        name: 'Haider Ali',
+        role: 'Software Engineer • Co-Founder at ByteDX',
+        rating: 5,
+        text: 'Working with Hamza has been a smooth experience. He keeps the team organized, documents ideas well, and turns discussions into actionable plans. Whether it is product strategy or development, he consistently pushes for quality instead of shortcuts.',
+        
+    }
+];
     const nextReview = () => {
         setCurrentReview((prev) => (prev + 1) % reviews.length);
     };
