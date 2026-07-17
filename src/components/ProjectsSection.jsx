@@ -27,14 +27,6 @@ const ProjectsSection = () => {
       liveDemo: "https://naz-auto.vercel.app/",
     },
     {
-      id: 2,
-      image: "/Eco-Smart.png",
-      title: "Eco-Smart",
-      description: "Intelligent Waste Tracking & Management Portal",
-      tags: ["React", "TypeScript", "Node.js", "MongoDB"],
-      liveDemo: "https://eco-smart.vercel.app/",
-    },
-    {
       id: 3,
       image: "/tour.webp",
       title: "Travel AI - AI Travel Planner",
