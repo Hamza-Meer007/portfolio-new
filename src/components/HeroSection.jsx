@@ -16,7 +16,7 @@ const HeroSection = () => {
             >
               I'm Hamza Meer
               <br />
-              Software Engineer
+              AI Engineer
               <br />& Full Stack Developer
             </h1>
 
